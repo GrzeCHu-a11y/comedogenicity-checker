@@ -1,0 +1,73 @@
+/* Naviagtion */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5a4fdf;
+    text-transform: uppercase;
+}
+
+/* Navigation Links */
+.navLinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navLinks li a:hover {
+    color: #5a4fdf;
+}
+
+/* social icons */
+.socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+    color: #5a4fdf;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        /* Hide nav on tablets */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navLinks {
+        gap: 15px;
+        /* Reducing the spacing between links */
+    }
+
+    .socialIcons a {
+        font-size: 18px;
+        /* Reducing icon size */
+    }
+}
