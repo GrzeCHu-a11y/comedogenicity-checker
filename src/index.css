@@ -107,7 +107,7 @@ section {
 body {
   line-height: 1;
   font-family: "Poppins";
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 ol,
@@ -176,5 +176,14 @@ table {
 /* Font Config */
 
 h1 {
-  font-size: 50px;
+  font-size: clamp(40px, 5vw, 96px);
+}
+
+p {
+  font-size: clamp(16px, 2vw, 22px);
+}
+
+section {
+  box-sizing: border-box;
+  padding: 0 10px;
 }

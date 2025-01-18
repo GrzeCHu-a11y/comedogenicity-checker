@@ -3,30 +3,52 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 70px;
 }
 
 .SearchBar {
-    padding: 10px;
-    width: 30%;
-    border: 2px solid black;
+    padding: 12px;
+    width: clamp(60%, 40vw, 400px);
+    border: 2px solid #ccc;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.SearchBar:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.6);
 }
 
 .fa {
     position: absolute;
-    /* Adjust based on the input width (30%) */
-    right: 36%;
-    /* Adjust based on the input width (30%) */
+    right: 21%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #333;
+    color: #6c63ff;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
+
+.fa:hover {
+    color: #4a42cc;
+}
+
 
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     appearance: none;
+}
+
+@media (max-width: 768px) {
+    .SearchBar {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .fa {
+        font-size: 16px;
+        right: 15%;
+    }
 }
