@@ -1,0 +1,32 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 70px;
+}
+
+.SearchBar {
+    padding: 10px;
+    width: 30%;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.fa {
+    position: absolute;
+    /* Adjust based on the input width (30%) */
+    right: 36%;
+    /* Adjust based on the input width (30%) */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
