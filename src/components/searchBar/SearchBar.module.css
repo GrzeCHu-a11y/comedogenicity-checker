@@ -7,7 +7,7 @@
 
 .SearchBar {
     padding: 12px;
-    width: clamp(60%, 40vw, 400px);
+    width: clamp(40%, 40vw, 400px);
     border: 2px solid #ccc;
     font-size: 16px;
     border-radius: 25px;
@@ -22,7 +22,7 @@
 
 .fa {
     position: absolute;
-    right: 21%;
+    right: 31%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
