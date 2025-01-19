@@ -147,8 +147,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
-  /* From 28px to 40px */
+  font-size: clamp(1.5rem, 4.5vw, 2rem);
   font-weight: 600;
   line-height: 1.3;
   margin: 20px 0;
@@ -184,19 +183,6 @@ small {
   font-size: clamp(0.875rem, 2vw, 1rem);
   /* From 14px to 16px */
   color: #777;
-}
-
-@media (max-width: 768px) {
-
-  h1,
-  h2 {
-    text-align: left;
-    /* Settins for mobile devices */
-  }
-
-  p {
-    margin: 10px 0;
-  }
 }
 
 @media (max-width: 480px) {
