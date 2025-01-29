@@ -1,3 +1,4 @@
+
 import SearchBar from "../components/searchBar/SearchBar";
 import SectionHeader from "../components/sectionHeader/SectionHeader";
 import styles from "./Home.module.css";
