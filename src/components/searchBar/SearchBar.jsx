@@ -1,17 +1,21 @@
 import { useState } from "react";
 import styles from "./SearchBar.module.css";
+import { useIngredients } from "../../context/IngredientsContext";
 
 const SearchBar = () => {
+    const { searchIngredients } = useIngredients();
     const [value, setInputValue] = useState("");
 
     const setValue = (e) => {
-        e.preventDefault();
         setInputValue(e.target.value)
         console.log(value)
     }
 
     const sendData = () => {
-        console.log("send")
+        if (value != "") {
+            searchIngredients(value)
+        } else return;
+
     }
 
     return (
