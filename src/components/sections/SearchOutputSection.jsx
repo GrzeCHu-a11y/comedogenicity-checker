@@ -12,7 +12,7 @@ const SearchOutputSection = () => {
                 <div className={styles.wrapper}>
                     {results.length > 0 ? (
                         results.map((ingredient, index) => (
-                            <p key={index}>{ingredient}</p>
+                            <p className={styles.p} key={index}>{ingredient},&ensp;</p>
                         ))
                     ) : (
                         <p>Brak wyników</p>
