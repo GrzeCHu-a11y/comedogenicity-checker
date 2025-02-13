@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+
+}
+
+.list {
+    flex-grow: 1;
+    height: 30vh;
+    border: 1px solid #4B5563;
+}
+
+@media (max-width: 480px) {
+    .list {
+        width: 100%;
+    }
+}

@@ -1,6 +1,7 @@
 import SearchOutputSection from "../components/sections/SearchOutputSection";
 import SearchBar from "../components/searchBar/SearchBar";
 import styles from "./Home.module.css";
+import IngredientsListSection from "../components/sections/IngredientsListSection";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
                 <SearchBar />
             </section>
             <SearchOutputSection />
+            <IngredientsListSection />
         </>
     );
 };
