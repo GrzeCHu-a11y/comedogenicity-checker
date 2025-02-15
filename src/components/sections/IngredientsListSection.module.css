@@ -1,19 +1,22 @@
 .wrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 70px;
-
+    justify-content: center;
+    gap: 20px;
 }
 
-.list {
-    flex-grow: 1;
-    height: 30vh;
-    border: 1px solid #4B5563;
+.column {
+    width: 23%;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-@media (max-width: 480px) {
-    .list {
-        width: 100%;
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        max-width: 100%;
     }
 }
