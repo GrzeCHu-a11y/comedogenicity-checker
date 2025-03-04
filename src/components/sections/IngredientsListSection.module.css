@@ -1,22 +1,33 @@
 .wrapper {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.column {
-    width: 23%;
+.itemsContainer {
+    box-sizing: border-box;
     padding: 10px;
-    border-radius: 5px;
+    width: 95%;
+    border: 1px solid rgb(126, 125, 125);
 }
 
-@media (max-width: 768px) {
-    .wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
+.itemsContainer:nth-child(2) {
+    margin: 20px 0;
+}
 
-    .column {
-        max-width: 100%;
-    }
+.positioner {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.disabled {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.visible {
+    height: auto;
+    overflow: hidden;
 }
